@@ -1,0 +1,354 @@
+/*header样式*/
+header{
+    width: 100%;
+    background-color: rgba(0,0,0,0.8);
+    float: left;
+    height: 80px;
+}
+.vip_header{
+    width: 1200px;
+    height: 80px;
+    line-height: 80px;
+    margin: 0 auto;
+    position: relative;
+}
+.vip_header>ul.current>li{
+    margin:0 15px;
+}
+.vip_header>ul.current>li>a{
+    font-size: 18px;
+    color:white;
+}
+.vip_header li.active>a{
+    color:#31c27c !important;
+}
+.vip_header>span{
+    line-height: 30px;
+    color:#9e9e9e;
+    font-size:12px;
+    position: absolute;
+    top:25px;
+    right:0;
+}
+.vip_header>span>a{
+    color: #42a41b;
+    text-decoration: none;
+}
+.vip_header>span>a:hover{
+    text-decoration: underline;
+}
+/*main样式*/
+main{
+    width: 100%;
+}
+/*f1*/
+main .f1{
+    background: url("../img/vip/f1_bg.jpg") no-repeat 0 0;
+    background-size: 100%;
+    width: 100%;
+    height: 750px;
+}
+main>.f1:before{
+    content:"";
+    display:block;
+    clear:both;
+}
+main>.f1>div{
+    width: 500px;
+    height: 234px;
+    margin: 250px auto 0;
+    text-align: center;
+    color:white;
+}
+main>.f1>div>h2{
+    width: 500px;
+    height: 100px;
+    background: url("../img/vip/sprite_index_banner.png") 0 0;
+    margin-bottom: 15px;
+}
+main>.f1>div>p{
+    width: 500px;
+    height: 30px;
+    background: url("../img/vip/sprite_index_banner.png") 0 -300px;
+    margin-bottom: 25px;
+}
+main>.f1>div>a{
+    display: block;
+    width: 320px;
+    height: 64px;
+    margin: 0 auto;
+    border-radius: 99px;
+    background-color: #31c27c;
+    line-height: 64px;
+    font-size: 34px;
+    text-decoration: none;
+    color:white;
+}
+.f1>.f1_bottom{
+    width: 100%;
+    height: 164px;
+    position: absolute;
+    top:336px;
+    left:0;
+    background: rgba(0,0,0,.1)
+}
+.f1>.f1_bottom>ul{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+.f1>.f1_bottom>ul>li{
+    width: 300px;
+    height: 100%;
+    float: left;
+    position: relative;
+    margin: 0 45px;
+}
+.f1>.f1_bottom>ul>li>a{
+    width: 300px;
+    height: 100px;
+    background:url("../img/vip/sprite_index_banner.png") -500px 0;
+    position: absolute;
+    top:15px;
+    left: 0;
+}
+.f1>.f1_bottom>ul>li:nth-child(2)>a{
+    background-position: -500px -100px;
+}
+.f1>.f1_bottom>ul>li:nth-child(3)>a{
+    background-position: -500px -200px;
+}
+.f1>.f1_bottom>ul>li>a:hover{
+    background-position: -800px 0;
+}
+.f1>.f1_bottom>ul>li:nth-child(2)>a:hover{
+    background-position: -800px -100px;
+}
+.f1>.f1_bottom>ul>li:nth-child(3)>a:hover{
+    background-position: -800px -200px;
+}
+/*f2*/
+.f2, .f3, .f4, .f5{
+    width: 100%;
+    height: 1100px;
+    overflow: hidden;
+    position:relative;
+}
+.f2 .f2_bg, .f3 .f3_bg, .f4 .f4_bg,  .f5 .f5_bg{
+    width: 100%;
+    height: 740px;
+    background: url("../img/vip/f2_bg.jpg") center center;
+    z-index: -10;
+}
+.f2>h2, .f3>h2, .f4>h2, .f5>h2{
+    width: 460px;
+    height: 60px;
+    margin: 40px auto 25px;
+    background: url("../img/vip/feature.png") 0 -310px;
+}
+.f2>p, .f3>p, .f4>p, .f5>p{
+    width: 740px;
+    height: 60px;
+    margin: 0 auto;
+    background: url("../img/vip/feature.png") 0 0;
+}
+.f2>ul, .f3>ul, .f4>ul, .f5>ul{
+    width: 510px;
+    margin: 0 auto;
+}
+.f2>ul>li, .f3>ul>li, .f4>ul>li, .f5>ul>li{
+    width: 150px;
+    height: 126px;
+    float: left;
+    margin:10px 10px 0;
+    text-align: center;
+}
+.f2>ul>li>a, .f3>ul>li>a, .f4>ul>li>a,  .f5>ul>li>a{
+    text-decoration:none;
+    font-size: 14px;
+    color: #707070;
+}
+.f2>ul>li>a:hover, .f3>ul>li>a:hover, .f4>ul>li>a:hover, .f5>ul>li>a:hover{
+    text-decoration: underline;
+}
+.f2>ul>li>a>span, .f3>ul>li>a>span, .f4>ul>li>a>span, .f5>ul>li>a>span{
+    display: block;
+    background:url("../img/vip/feature.png") -408px -496px;
+    width: 100px;
+    height: 100px;
+    margin-left: 25px;
+}
+.f2>ul>li:nth-child(2)>a>span{
+    background-position:0 -598px;;
+}
+.f2>ul>li:nth-child(3)>a>span{
+    background-position: -102px -598px;
+}
+.f2 .f2_mask1{
+    position:absolute;
+    width: 1100px;
+    height: 1000px;
+    top: 0;
+    right: -200px;
+    background:url("../img/vip/ftshape.png") 0 0;
+}
+.f2 .f2_mask2{
+    position:absolute;
+    width: 360px;
+    height: 300px;
+    bottom: 250px;
+    right: -85px;
+    background:url("../img/vip/ftshape.png") 0 -1604px;
+}
+.f2 .f2_mask3{
+    position:absolute;
+    width: 600px;
+    height: 600px;
+    bottom: 0;
+    left: -200px;
+    background:url("../img/vip/ftshape.png") -822px -1002px;
+}
+/*f3*/
+.f3 .f3_bg{
+    background: url("../img/vip/f3_bg.jpg") center center;;
+}
+.f3>h2{
+    background-position: 0 -372px;;
+}
+.f3>p{
+    background-position: 0 -62px;
+}
+.f3>ul{
+    width: 680px;
+}
+.f3>ul>li:nth-child(1)>a>span{
+    background-position: -204px -598px;
+}
+.f3>ul>li:nth-child(2)>a>span{
+    background-position: -306px -598px;
+}
+.f3>ul>li:nth-child(3)>a>span{
+    background-position: 0 -496px;
+}
+.f3>ul>li:nth-child(4)>a>span{
+    background-position: -102px -496px;
+}
+.f3 .f3_mask1{
+    position:absolute;
+    width: 740px;
+    height: 580px;
+    bottom: -50px;
+    right: -250px;
+    background:url("../img/vip/ftshape.png") -2044px 0;
+    z-index: -1;
+}
+.f3 .f3_mask2{
+    position:absolute;
+    width: 120px;
+    height: 120px;
+    bottom: 450px;
+    right: 120px;
+    background:url("../img/vip/ftshape.png") -2246px -1406px;
+}
+.f3 .f3_mask3{
+    position:absolute;
+    width: 200px;
+    height: 180px;
+    bottom: 300px;
+    left: 100px;
+    background:url("../img/vip/ftshape.png") -2044px -1406px;
+}
+/*f4*/
+.f4 .f4_bg{
+    background: url("../img/vip/f4_bg.jpg") center center;;
+}
+.f4>h2{
+    background-position: 0 -434px;
+}
+.f4>p{
+    background-position: 0 -124px;
+}
+.f4>ul>li:nth-child(1)>a>span{
+    background-position: -408px -598px;
+}
+.f4>ul>li:nth-child(2)>a>span{
+    background-position: -306px -496px;
+}
+.f4>ul>li:nth-child(3)>a>span{
+    background-position: -204px -496px;
+}
+.f4 .f4_mask1{
+    position:absolute;
+    width: 820px;
+    height: 600px;
+    top: 0;
+    right: -270px;
+    background:url("../img/vip/ftshape.png") 0 -1002px;
+}
+.f4 .f4_mask2{
+    position:absolute;
+    width: 640px;
+    height: 340px;
+    bottom: 180px;
+    left: -140px;
+    background:url("../img/vip/ftshape.png") -2044px -1064px;
+}
+.f4 .f4_mask3{
+    position:absolute;
+    width: 375px;
+    height: 320px;
+    bottom: 100px;
+    right: -90px;
+    background:url("../img/vip/ftshape.png") -1624px -1002px;
+}
+/*f5*/
+.f5 .f5_bg{
+    background: url("../img/vip/f5_bg.jpg") center center;;
+}
+.f5>h2{
+    background-position: 0 -248px;
+}
+.f5>p{
+    background-position: 0 -186px;
+}
+.f5>ul{
+    width: 340px;
+}
+.f5>ul>li:nth-child(1)>a>span{
+    background-position: -510px -496px;
+}
+.f5>ul>li:nth-child(2)>a>span{
+    background-position: -612px -496px;
+}
+.f5 .f5_mask1{
+    position:absolute;
+    width: 940px;
+    height: 800px;
+    top: 0;
+    left: -135px;
+    background:url("../img/vip/ftshape.png") -1102px 0;
+}
+.f5 .f5_mask2{
+    position:absolute;
+    width: 310px;
+    height: 320px;
+    top: 260px;
+    right: 220px;
+    background:url("../img/vip/ftshape.png") 0 -1906px;
+}
+.f5 .f5_mask3{
+    position:absolute;
+    width: 120px;
+    height: 120px;
+    bottom: 310px;
+    left: 250px;
+    background:url("../img/vip/ftshape.png") -2368px -1406px;
+}
+.f5 .f5_mask4{
+    position:absolute;
+    width: 640px;
+    height: 480px;
+    bottom: 0;
+    right: -240px;
+    background:url("../img/vip/ftshape.png") -2044px -582px;;
+}
