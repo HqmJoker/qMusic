@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <title>3d张学友播放器练习</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-image: url("img/jacky/bg.jpg");
+            background-size: cover;
+            overflow:hidden;
+        }
+        /*ul样式*/
+        .box .pic {
+            height: 200px;
+            width: 200px;
+            position:absolute;
+            left: 50%;
+            margin-left:-100px;
+            bottom:100px;
+            transform-style: preserve-3d;
+            animation:Rotate 6s linear infinite normal;
+        }
+        /*li样式*/
+        .box .pic li{
+            list-style:none;
+            width: 200px;
+            height: 200px;
+            position:absolute;
+            left:0;
+            top:0;
+            border:2px solid lightskyblue;
+            box-sizing:border-box;
+        }
+        .box .pic li:nth-child(1){
+            transform:rotateY(0) translateZ(180px);
+        }
+        .box .pic li:nth-child(2){
+            transform:rotateY(60deg) translateZ(180px);
+        }
+        .box .pic li:nth-child(3){
+            transform:rotateY(120deg) translateZ(180px);
+        }
+        .box .pic li:nth-child(4){
+            transform:rotateY(180deg) translateZ(180px);
+        }
+        .box .pic li:nth-child(5){
+            transform:rotateY(240deg) translateZ(180px);
+        }
+        .box .pic li:nth-child(6){
+            transform:rotateY(300deg) translateZ(180px);
+        }
+        /*鼠标悬停动画停止*/
+        .box .pic:hover{
+            animation-play-state:paused;
+            background-color: black;
+        }
+        .box .pic:hover li{
+            opacity:0.5;
+        }
+        .box .pic li:hover{
+            opacity:1;
+        }
+        /*旋转动画*/
+        @keyframes Rotate{
+            from{
+                transform:rotateX(-10deg) rotateY(0deg) ;
+
+            }
+            to{
+                transform:rotateX(-10deg) rotateY(360deg) ;
+            }
+        }
+        /*图片样式*/
+        .box .pic li img{
+            width: 200px;
+            height: 200px;
+        }
+        /*心的样式*/
+        .heart{
+            height: 100px;
+            width: 100px;
+            position:absolute;
+            top: 50%;
+            left: 0;
+            opacity:1;
+            animation:Flutter 7s linear infinite normal;
+        }
+        /*心移动动画*/
+        @keyframes Flutter{
+            0%{
+                top:50%;
+                left:0;
+                opacity:1;
+            }
+            20%{
+                top:10%;
+                left:10%;
+                opacity:0;
+            }
+            40%{
+                top:3%;
+                left:48%;
+                opacity:1;
+            }
+            60%{
+                top:23%;
+                left:65%;
+                opacity:0;
+            }
+            80%{
+                top:40%;
+                left:83%;
+                opacity:1;
+            }
+            100%{
+                top:50%;
+                left:100%;
+                opacity:0;
+            }
+        }
+
+        embed{
+            width: 0;
+            height: 0;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <ul class="pic">
+        <li><img src="img/jacky/1.png"></li>
+        <li><img src="img/jacky/2.jpg"></li>
+        <li><img src="img/jacky/3.jpg"></li>
+        <li><img src="img/jacky/4.gif"></li>
+        <li><img src="img/jacky/5.jpg"></li>
+        <li><img src="img/jacky/6.jpg"></li>
+    </ul>
+</div>
+<div class="heart"><img src="img/jacky/xin.png" /></div>
+<embed src="source/MusicCase.mp3"/>
+</body>
+</html>
