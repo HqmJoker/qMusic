@@ -1,0 +1,550 @@
+/* 头部样式 */
+header{
+    width: 100%;
+    height: 80px;
+    background: rgba(0,0,0,.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+header:before{
+    content:"";
+    display: table;
+    clear:both;
+}
+header .header_content{
+    width: 996px;
+    height: 46px;
+    margin: 17px auto;
+    font-size:20px;
+    color:white;
+    line-height: 40px;
+}
+.header_content a{
+    color:white;
+    text-decoration:none;
+}
+.header_content>h2, .header_content>span, .header_content>a{
+    float:left;
+}
+.header_content>h2{
+    width: 156px;
+    height: 49px;
+    margin-right: 80px;
+}
+.header_content>h2>a{
+    background: url("../img/client/logo.png") no-repeat 0 0;
+    background-size:100% ;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+.header_content>span{
+    color:#31c27c;
+    margin-right: 80px;
+}
+.header_content>ul{
+    width: 355px;
+    height: 100%;
+    float:right;
+}
+.header_content>ul>li{
+    display: block;
+    float: left;
+    margin-left: 27px;
+    line-height: 40px;
+}
+/*f1*/
+.f1{
+    width: 100%;
+    height: 650px;
+    background:url("../img/client/banner_pc.jpg") 50% no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.f1 .watch{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -300px;
+    margin-left: -530px;
+    width: 476px;
+    height: 478px;
+    background: url("../img/client/watch_bg.png") 0 0 no-repeat;
+}
+.f1 .watch_needle{
+    position: absolute;
+    top: 220px;
+    left: 220px;
+    width: 131px;
+    height: 105px;
+    background: url("../img/client/img_index.png") -448px -824px;
+    animation: watchHand 2s both;
+    transform-origin: 24px 24px;
+}
+.f1 .watch_num1{
+    position: absolute;
+    top: 320px;
+    left: 204px;
+    width: 40px;
+    height: 50px;
+    background: url("../img/client/watch_numb.png");
+    animation: watchNumb1 1.5s steps(6) both;
+}
+.f1 .watch_num2{
+    position: absolute;
+    top: 320px;
+    left: 248px;
+    width: 40px;
+    height: 50px;
+    background-image: url("../img/client/watch_numb.png");
+    animation: watchNumb2 .5s steps(10) 3;
+}
+.f1_content>h2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -205px;
+    width: 578px;
+    height: 214px;
+    background: url("../img/client/img_index.png") 0 0;
+}
+.f1_content>a{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 12px;
+    margin-left: -2px;
+    width: 293px;
+    height: 69px;
+    background: url("../img/client/img_index.png") -372px -735px;
+}
+.f1>ul{
+    width: 1180px;
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    margin-left: -590px;
+    height: 190px;
+    text-align: center;
+}
+.f1>ul>li{
+    float: left;
+}
+.f1>ul>li>a{
+    display: inline-block;
+    width: 110px;
+    height: 170px;
+    margin-right: 185px;
+    position: relative;
+    opacity: .4;
+    background: url("../img/client/img_index.png") -336px -824px;
+}
+.f1>ul>li:nth-child(2)>a{
+    background-position: -224px -824px;
+}
+.f1>ul>li:nth-child(3)>a{
+    background-position: -112px -824px;
+}
+.f1>ul>li:nth-child(4)>a{
+    background-position: 0 -824px;
+}
+.f1>ul>li>a:hover{
+    opacity: 1;
+}
+/*f2*/
+.f2{
+    width: 100%;
+    height: 900px;
+    position: relative;
+}
+.f2:before{
+    content:"";
+    display: table;
+    clear: both;
+}
+.f2>div{
+    height: 245px;
+    width: 563px;
+    position: relative;
+    margin:200px auto 0;
+    animation: fadeIn 1.2s both;
+    animation-delay:3s;
+}
+.f2>div>h2{
+    width: 100%;
+    height: 75px;
+    background:url("../img/client/img_index.png") -445px -512px;
+    margin-bottom: 35px;
+}
+.f2>div>h3{
+    width: 348px;
+    height: 69px;
+    margin: 0 auto;
+    background:url("../img/client/img_index.png") -842px -664px;
+}
+.f2>ul{
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    overflow: hidden;
+}
+.f2>ul>li>ul{
+    width: 1920px;
+    height: 211px;
+    margin-left: -60px;
+}
+.f2>ul>li:nth-child(1)>ul{
+    margin: -80px 0 0 -60px;
+}
+.f2>ul>li>ul>li{
+    width: 211px;
+    height: 211px;
+    background:url("../img/client/sprite1.jpg") 0 0 no-repeat;
+    float: left;
+    animation: fadeIn 1.2s both;
+}
+.f2>ul>li>ul>li:nth-child(1){
+    background-position: 0 -212px;
+    animation-delay: 1.5s;
+}
+.f2>ul>li>ul>li:nth-child(2){
+    background-position: 0 -424px;
+    animation-delay: 1s;
+}
+.f2>ul>li>ul>li:nth-child(3){
+    background-position: 0 -636px;
+    animation-delay: 3s;
+}
+.f2>ul>li>ul>li:nth-child(4){
+    background-position: 0 -848px;
+    animation-delay: 2.5s;
+}
+.f2>ul>li>ul>li:nth-child(5){
+    background-position: 0 -1060px;
+    animation-delay: 2s;
+}
+.f2>ul>li>ul>li:nth-child(6){
+    background-position: 0 -1272px;
+    animation-delay: 1.5s;
+}
+.f2>ul>li>ul>li:nth-child(7){
+    background-position: 0 -1484px;
+    animation-delay: 1s;
+}
+.f2>ul>li:nth-child(2)>ul>li:nth-child(1){
+    background-position: 0 -2120px;
+    animation-delay: 2s;
+}
+.f2>ul>li:nth-child(2)>ul>li:nth-child(2){
+    background: url("../img/client/singer12.jpg") 0 0 no-repeat;
+    animation-delay: 1.5s;
+}
+.f2>ul>li:nth-child(2)>ul>li:nth-child(3){
+    background: url("../img/client/singer13.jpg") 0 0 no-repeat;
+}
+.f2>ul>li:nth-child(2)>ul>li:nth-child(4){
+    background-position: 0 -2332px;
+    animation-delay: 3s;
+}
+.f2>ul>li:nth-child(2)>ul>li:nth-child(5){
+    background-position: 0 -2544px;
+    animation-delay: .3s;
+}
+.f2>ul>li:nth-child(2)>ul>li:nth-child(6){
+    background-position: 0 -2756px;
+    animation-delay: .5s;
+}
+.f2>ul>li:nth-child(2)>ul>li:nth-child(7){
+    background: url("../img/client/singer17.jpg") 0 0 no-repeat;
+    animation-delay: 2s;
+}
+.f2>ul>li:nth-child(3)>ul>li, .f2>ul>li:nth-child(4)>ul>li, .f2>ul>li:nth-child(5)>ul>li{
+    background: url("../img/client/sprite2.jpg") 0 0 no-repeat;
+}
+.f2>ul>li:nth-child(3)>ul>li:nth-child(1){
+    background: url("../img/client/singer20.jpg") 0 0 no-repeat;
+    animation-delay: .8s;
+}
+.f2>ul>li:nth-child(3)>ul>li:nth-child(2){
+    background: url("../img/client/singer21.jpg") 0 0 no-repeat;
+    animation-delay: .5s;
+}
+.f2>ul>li:nth-child(3)>ul>li:nth-child(3){
+    background: url("../img/client/sprite1.jpg") 0 -3180px no-repeat;
+    animation-delay: 2s;
+}
+.f2>ul>li:nth-child(3)>ul>li:nth-child(4){
+    animation-delay: 1.5s;
+}
+.f2>ul>li:nth-child(3)>ul>li:nth-child(5){
+    background-position: 0 -212px;
+    animation-delay: 1.2s;
+}
+.f2>ul>li:nth-child(3)>ul>li:nth-child(6){
+    background: url("../img/client/singer25.jpg") 0 0 no-repeat;
+}
+.f2>ul>li:nth-child(3)>ul>li:nth-child(7){
+    background-position: 0 -424px;
+    animation-delay: .5s;
+}
+.f2>ul>li:nth-child(4)>ul>li:nth-child(1){
+    background-position: 0 -1060px;
+    animation-delay: 1.2s;
+}
+.f2>ul>li:nth-child(4)>ul>li:nth-child(2){
+    background: url("../img/client/singer30.jpg") 0 0 no-repeat;
+    animation-delay: .8s;
+}
+.f2>ul>li:nth-child(4)>ul>li:nth-child(3){
+    background-position: 0 -1272px;
+    animation-delay: .5s;
+}
+.f2>ul>li:nth-child(4)>ul>li:nth-child(4){
+    background: url("../img/client/singer32.jpg") 0 0 no-repeat;
+    animation-delay: .3s;
+}
+.f2>ul>li:nth-child(4)>ul>li:nth-child(5){
+    background-position: 0 -1482px;
+    animation-delay: 1.5s;
+}
+.f2>ul>li:nth-child(4)>ul>li:nth-child(6){
+    background-position: 0 -1696px;
+    animation-delay: 1.2s;
+}
+.f2>ul>li:nth-child(4)>ul>li:nth-child(7){
+    background: url("../img/client/singer35.jpg") 0 0 no-repeat;
+    animation-delay: .8s;
+}
+.f2>ul>li:nth-child(5)>ul>li:nth-child(1){
+    background-position: 0 -2332px;
+    animation-delay: 1s;
+}
+.f2>ul>li:nth-child(5)>ul>li:nth-child(2){
+    background-position:0 -2544px;
+    animation-delay: .8s;
+}
+.f2>ul>li:nth-child(5)>ul>li:nth-child(3){
+    background-position:0 -2756px;
+    animation-delay: 1s;
+}
+.f2>ul>li:nth-child(5)>ul>li:nth-child(4){
+    background-position: 0 -2968px;
+    animation-delay: .5s;
+}
+.f2>ul>li:nth-child(5)>ul>li:nth-child(5){
+    background-position: 0 -3180px;
+    animation-delay: 1.5s;
+}
+.f2>ul>li:nth-child(5)>ul>li:nth-child(6){
+    background-position: 0 -3392px;
+    animation-delay: 1.2s;
+}
+.f2>ul>li:nth-child(5)>ul>li:nth-child(7){
+    background-position: 0 -3604px;
+    animation-delay: 2.5s;
+}
+/*f3*/
+.f3{
+    width: 100%;
+    height: 900px;
+    background:url("../img/client/bg_lyric.jpg") 50% no-repeat ;
+    background-size: cover;
+    position: relative;
+}
+.f3>.f3_left{
+    position: absolute;
+    top: 50%;
+    left: 200px;
+    margin-top: -125px;
+}
+.f3>.f3_left>h2{
+    background:url("../img/client/img_index.png") 0 -361px;
+    margin-bottom: 30px;
+    width: 554px;
+    height: 149px;
+}
+.f3>.f3_left>h3{
+    background:url("../img/client/img_index.png") -372px -664px;
+    width: 468px;
+    height: 69px;
+}
+.f3>.f3_right{
+    width: 580px;
+    height: 892px;
+    float: right;
+    position: relative;
+}
+.f3>.f3_right>.f3_right_pic1{
+    width: 580px;
+    height: 892px;
+    background:url("../img/client/lyric_phonebox.png") 0 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.f3>.f3_right>.f3_right_pic2{
+    width: 339px;
+    height: 597px;
+    background:url("../img/client/lyric_phone2.jpg") 0 0;
+    position: absolute;
+    top: 136px;
+    left: 103px;
+    transform:rotateZ(7.5deg);
+}
+/*f4*/
+.f4{
+    width: 100%;
+    height: 900px;
+    background:url("../img/client/bg_like.jpg") 50% no-repeat ;
+    background-size: cover;
+    position: relative;
+}
+.f4>.f4_left{
+    width: 520px;
+    height: 807px;
+    float: left;
+    position: relative;
+    top: 125px;
+    left: 50px;
+}
+.f4>.f4_left>.f4_left_pic1{
+    width: 450px;
+    height: 778px;
+    background:url("../img/client/like_phonebox.png") 0 0 no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.f4>.f4_left>.f4_left_pic2{
+    width: 314px;
+    height: 467px;
+    background:url("../img/client/like_phone.jpg") 0 0 no-repeat;
+    position: absolute;
+    top: 179px;
+    left: 61px;
+    transform:rotateZ(-5.5deg);
+}
+.f4>.f4_right{
+    position: absolute;
+    top: 50%;
+    right: 100px;
+    margin-top: -125px;
+}
+.f4>.f4_right>h2{
+    background:url("../img/client/img_index.png") 0 -216px;
+    margin-bottom: 30px;
+    width: 615px;
+    height: 143px;
+}
+.f4>.f4_right>h3{
+    background:url("../img/client/img_index.png") -445px -589px;
+    width: 550px;
+    height: 69px;
+}
+/*f5*/
+.f5{
+    width: 100%;
+    height: 900px;
+    background:url("../img/client/bg_synchro.jpg") 50% no-repeat ;
+    background-size: cover;
+    position: relative;
+}
+.f5>.f5_left{
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    margin-top: -270px;
+}
+.f5>.f5_left>h2{
+    background:url("../img/client/img_index.png") -617px -216px;
+    margin-bottom: 30px;
+    width: 554px;
+    height: 136px;
+}
+.f5>.f5_left>h3{
+    background:url("../img/client/img_index.png") -580px -147px;
+    width: 454px;
+    height: 63px;
+}
+.f5>.f5_left>.phone{
+    width: 255px;
+    height: 329px;
+    background: url("../img/client/synchro_phone.png");
+    margin: 40px 0 0 170px;
+}
+.f5>.f5_right{
+    width: 620px;
+    height: 784px;
+    float: right;
+    position: relative;
+    margin-right: 40px;
+}
+.f5>.f5_right>.f5_right_pic1{
+    width: 620px;
+    height: 408px;
+    background:url("../img/client/synchro_mac1.png") 0 0 no-repeat;
+    position: absolute;
+    top: 50px;
+    left: 0;
+}
+.f5>.f5_right>.f5_right_pic2{
+    width: 620px;
+    height: 376px;
+    background:url("../img/client/synchro_mac2.png") 0 0 no-repeat;
+    position: absolute;
+    top:458px;
+    left: 0;
+}
+.f5>footer{
+    width: 100%;
+    height: 72px;
+    position: absolute;
+    bottom:0;
+    left: 0;
+    background-color: rgba(0,0,0,.3);
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.5;
+    color:white;
+    padding: 14px 0;
+    box-sizing: border-box;
+}
+.f5>footer>p>a{
+    color:white;
+    text-decoration: none;
+}
+.f5>footer>p>a:hover{
+    text-decoration: underline;
+}
+.f5>footer>p>a
+/*定义动画*/
+@keyframes watchHand{
+    0%{transform:rotate(-252deg)}
+    70%{transform:rotate(3deg)}
+    80%{transform:rotate(-2deg)}
+    90%{transform:rotate(1deg)}
+    100%{transform:rotate(0)}
+}
+@keyframes watchNumb1{
+    0%{background-position:0 0}
+    100%{background-position:0 -300px}
+}
+@keyframes watchNumb2{
+    0%{background-position:0 0}
+    100%{background-position:0 -500px}
+}
+@keyframes fadeIn{
+    0%{opacity:0;transform:scale(1.2)}
+    100%{opacity:1;transform:scale(1)}
+}
+.clearfix:after{
+    content:"";
+    display: block;
+    clear: both;
+}

@@ -1,0 +1,38 @@
+#profile{
+    width: 100%;
+    height: 922px;
+    background: url("../img/profile/bg_profile_unlogin.jpg") 100% 100% no-repeat;
+    background-size: cover;
+}
+#profile:before{
+    content:" ";
+    display: table;
+}
+#profile>h2{
+    width: 735px;
+    height: 64px;
+    color:white;
+    line-height: 64px;
+    margin: 210px auto 0 ;
+    background: url("../img/profile/profile_tit.png") no-repeat 0 0;
+}
+#profile>p{
+    width: 345px;
+    height: 30px;
+    background: url("../img/profile/profile_tit.png") no-repeat 0 -70px;
+    margin: 30px auto 36px;
+}
+#profile>a{
+    margin: 0 auto;
+    background-color: #2caf6f;
+    color: #fff;
+    text-decoration: none;
+    line-height: 43px;
+    height:48px;
+    font-size: 20px;
+    display:block;
+    width:128px;
+    border:1px solid #2caf6f;
+    text-align: center;
+    border-radius:2px ;
+}
