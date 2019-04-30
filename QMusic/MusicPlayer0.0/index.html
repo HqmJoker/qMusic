@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>QQ音乐播放器</title>
+
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="css/index.css" />
+
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript" src="js/player.js"></script>
+    <script type="text/javascript" src="js/progress.js"></script>
+    <script type="text/javascript" src="js/lyric.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+<!--头部-->
+<div class="header">
+    <h1 class="logo"><a href="../index.html"></a></h1>
+    <ul class="register">
+        <li>登录</li>
+        <li>注册</li>
+    </ul>
+</div>
+<!--中间内容区-->
+<div class="content">
+    <div class="content_in">
+        <div class="content_left">
+            <div class="content_toolbar">
+                <span><i></i>收藏</span>
+                <span><i></i>添加到</span>
+                <span><i></i>下载</span>
+                <span><i></i>删除</span>
+                <span><i></i>清空列表</span>
+            </div>
+            <div class="content_list" data-mcs-theme="minimal-dark">
+                <ul>
+                    <li class="list_title">
+                        <div class="list_check"><i></i></div>
+                        <div class="list_number"></div>
+                        <div class="list_name">歌名</div>
+                        <div class="list_singer">歌手</div>
+                        <div class="list_time">时长</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="content_right">
+            <div class="song_info">
+                <a href="javascript:;" class="song_info_pic">
+                    <img src="images/ss.jpg" alt="绅士">
+                </a>
+                <div class="song_info_name">
+                    歌曲名：
+                    <a href="javascript:;">绅士</a>
+                </div>
+                <div class="song_info_singer">
+                    歌手：
+                    <a href="javascript:;">薛之谦</a>
+                </div>
+                <div class="song_info_album">
+                    专辑名：
+                    <a href="javascript:;">绅士</a>
+                </div>
+            </div>
+            <div class="lyricBox">
+                <ul class="song_info_lyric">
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--底部-->
+<div class="footer">
+    <div class="footer_in">
+        <a href="javascript:;" class="music_prev"></a>
+        <a href="javascript:;" class="music_play"></a>
+        <a href="javascript:;" class="music_next"></a>
+        <div class="music_progress_info">
+            <div class="music_progress_top">
+                <span class="music_progress_name">绅士 - 薛之谦</span>
+                <span class="music_progress_time">00:00 / 05:18</span>
+            </div>
+            <div class="music_progress_bar">
+                <div class="music_progress_line">
+                    <div class="music_progress_dot"></div>
+                </div>
+            </div>
+        </div>
+        <a href="javascript:;" class="music_mode"></a>
+        <a href="javascript:;" class="music_fav"></a>
+        <a href="javascript:;" class="music_down"></a>
+        <a href="javascript:;" class="music_comment"></a>
+        <a href="javascript:;" class="music_only"></a>
+        <div class="music_voice_info">
+            <a href="javascript:;" class="music_voice_icon"></a>
+            <div class="music_voice_bar">
+                <div class="music_voice_line">
+                    <div class="music_voice_dot"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--背景-->
+<div class="mask_bg"></div>
+<!--背景蒙版-->
+<div class="mask"></div>
+<!--添加音频-->
+<audio src="" class="audio"></audio>
+</body>
+</html>

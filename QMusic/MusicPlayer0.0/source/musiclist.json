@@ -1,0 +1,83 @@
+[
+  {
+    "name":"As long AS Love Me",
+    "singer": "Justin Bieber",
+    "album": "NOW That's What I Call Music! 44",
+    "time": "03:49",
+    "link_url":"./source/AslongASLoveMe.mp3",
+    "cover": "./source/AslongASLoveMe.jpg",
+    "link_lrc": "./source/AslongASLoveMe.txt"
+  },
+  {
+    "name":"百里守约",
+    "singer": "萧敬腾",
+    "album": "《王者荣耀》百里守约英雄主打歌",
+    "time": "03:42",
+    "link_url":"./source/百里守约.mp3",
+    "cover":"./source/百里守约.jpg",
+    "link_lrc":"./source/百里守约.txt"
+  },
+  {
+    "name":"楚河汉界",
+    "singer":"薛之谦",
+    "album":"几个薛之谦",
+    "time":"04:17",
+    "link_url":"./source/楚河汉界.mp3",
+    "cover":"./source/楚河汉界.jpg",
+    "link_lrc":"./source/楚河汉界.txt"
+  },
+  {
+    "name":"告白气球",
+    "singer":"周杰伦",
+    "album":"周杰伦的床边故事",
+    "time":"03:35",
+    "link_url":"./source/告白气球.mp3",
+    "cover":"./source/告白气球.jpg",
+    "link_lrc":"./source/告白气球.txt"
+  },
+  {
+    "name":"广东爱情故事",
+    "singer": "广东雨神",
+    "album": "广东爱情故事",
+    "time": "03:34",
+    "link_url":"./source/广东爱情故事.mp3",
+    "cover":"./source/广东爱情故事.jpg",
+    "link_lrc":"./source/广东爱情故事.txt"
+  },
+  {
+    "name":"凉凉",
+    "singer": "杨宗纬/张碧晨",
+    "album": "凉凉",
+    "time": "05:00",
+    "link_url":"./source/凉凉.mp3",
+    "cover":"./source/凉凉.jpg",
+    "link_lrc":"./source/凉凉.txt"
+  },
+  {
+    "name":"说散就散",
+    "singer": "袁娅维",
+    "album": "说散就散",
+    "time": "04:02",
+    "link_url":"./source/说散就散.mp3",
+    "cover":"./source/说散就散.jpg",
+    "link_lrc":"./source/说散就散.txt"
+  },
+  {
+    "name":"违背的青春",
+    "singer":"薛之谦",
+    "album":"违背的青春",
+    "time":"05:36",
+    "link_url":"./source/违背的青春.mp3",
+    "cover":"./source/违背的青春.jpg",
+    "link_lrc":"./source/违背的青春.txt"
+  },
+  {
+    "name":"演员",
+    "singer": "薛之谦",
+    "album": "绅士",
+    "time": "04:21",
+    "link_url":"./source/演员.mp3",
+    "cover":"./source/演员.jpg",
+    "link_lrc":"./source/演员.txt"
+  }
+]
