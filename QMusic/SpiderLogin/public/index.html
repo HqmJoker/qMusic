@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>css3炫酷登录页</title>
+	<link rel="shortcut icon" href="../../img/favicon.ico" />
+	<meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
+  <meta name="author" content="Vincent Garreau" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" media="screen" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+    <link rel="stylesheet" href="../../Meizi/210495.css">
+    <link rel="stylesheet" href="../../Meizi/blog-common.css">
+    <link rel="stylesheet" href="../../Meizi/bundle-SimpleMemory-mobile.css">
+</head>
+<body>
+
+<div id="particles-js">
+	<div class="login">
+		<div class="login-top">
+			登录
+		</div>
+		<div class="login-center clearfix">
+			<div class="login-center-img"><img src="img/name.png"/></div>
+			<div class="login-center-input">
+				<input id="username" type="text" name="username" value="" placeholder="请输入您的用户名" onfocus="this.placeholder=''" onblur="this.placeholder='请输入您的用户名'"/>
+				<div class="login-center-input-text">用户名</div>
+			</div>
+		</div>
+		<div class="login-center clearfix">
+			<div class="login-center-img"><img src="img/password.png"/></div>
+			<div class="login-center-input">
+				<input id="password" type="password" name="password" value="" placeholder="请输入您的密码" onfocus="this.placeholder=''" onblur="this.placeholder='请输入您的密码'"/>
+				<div class="login-center-input-text">密码</div>
+			</div>
+		</div>
+		<button class="login-button">
+			登陆
+		</button>
+	</div>
+	<div class="sk-rotating-plane"></div>
+</div>
+
+<!-- 妹子 -->
+<div id="live2d-widget">
+	<canvas id="live2dcanvas" width="300" height="600" style="position: fixed; opacity: 0.7; right: 0px; bottom: -20px; z-index: 99999; pointer-events: none; border: 1px dashed rgb(204, 204, 204);">
+	</canvas>
+</div>
+
+<!-- scripts -->
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/particles.min.js"></script>
+<script src="js/app.js"></script>
+<script src="../../Meizi/L2Dwidget.0.min.js"></script>
+<script src="../../Meizi/L2Dwidget.min.js"></script>
+
+<script type="text/javascript">
+$(function(){
+	$(".login-button").click(function(){
+			var timer = null;
+      $(".login").addClass("active");//登录框缩小
+			//登录框旋转动画
+      timer = setTimeout(function(){
+          $(".sk-rotating-plane").addClass("active");
+          document.querySelector(".login").style.display = "none"
+      },800);
+        //移除登录动画
+        setTimeout(function(){
+            $(".login").removeClass("active");
+            $(".sk-rotating-plane").removeClass("active");
+            document.querySelector(".login").style.display = "block";
+            //处理请求数据
+            //根据账号密码查找信息
+            var username = $("#username").val();
+            var password = $("#password").val();
+            $.ajax({
+                url:"http://127.0.0.1:3000/loginMusic",
+                type:"get",
+                datatype:"json",
+                xhrFields:{withCredentials:true},
+                data:{name:username,pwd:password},
+                success:function(result){
+                    //重定向并带上查询出来的参数
+                    if(result.code > 0){
+					    alert("登录成功");
+                        window.location.href="../../index.html";
+					}else{
+                        alert("账号或密码错误");
+					}
+                },
+                error:function(){
+                    console.log("ajax请求错误!");
+                }
+            });
+        },3000)
+	});
+});
+L2Dwidget.init();
+</script>
+</body>
+</html>
