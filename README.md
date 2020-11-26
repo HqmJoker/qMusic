@@ -1,3 +1,4 @@
+##### 访问链接：https://hqmjoker.github.io/qMusic/QMusic/
 ##### 1.下载项目
 ###### 1.1 使用命令行下载
 `git clone https://github.com/HqmJoker/qMusic.git`
