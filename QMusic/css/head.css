@@ -50,10 +50,12 @@ header .current .h_active:hover a{
 }
 
 header>div{
-    width:305px;
+    width:330px;
     height:90px;
     position:absolute;
     right:0;
+    display: flex;
+    align-items: center;
 }
 header>div>a{
     text-decoration:none;
@@ -61,6 +63,48 @@ header>div>a{
     color:black;
     margin-right:8px;
 }
+header>div>.change-theme{
+    display: flex;
+    align-items:center;
+    position: relative;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, .088);
+    width: 60px;
+    height: 32px;
+    margin-left: 5px;
+    justify-content: flex-end;
+}
+header>div>.change-theme:hover{
+    cursor: pointer;
+}
+.change-theme>.toggle-btn{
+    display: inline-block;
+    background-color: #f4f5f8;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: left .2s;
+}
+.change-theme>.toggle-text{
+    color: white;
+    padding: 0 10px;
+}
+.theme-activted{
+    background-color: #222428 !important;
+    justify-content: flex-start !important;
+    filter: invert(1) hue-rotate(180deg);
+}
+.theme-activted>.toggle-btn{
+    left: 30px;
+    filter: invert(1) hue-rotate(180deg)
+}
+.theme-activted>.toggle-text{
+    filter: invert(1) hue-rotate(180deg)
+}
+
 header>div>a:hover{
     text-decoration:none;
     color:#31c27c;
